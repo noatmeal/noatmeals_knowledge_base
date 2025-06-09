@@ -1,14 +1,8 @@
-= Introduction
-Trying out some features.
+= Noatmeal's Knowledge Base
 
-+ Item 1
-  - Sub Item 1
-  - Sub Item 29
-+ Item 2
-+ Item 3
+A place for me to store and explore ideas.
 
-$
-  7.32 beta +
-  sum_(i=0)^Omega
-  (Q_i (a_i - epsilon)) / 2
-$
+== Table of Contents
+
++ exploring_the_capabilities_of_typst_2025_06_09_06_25
+
