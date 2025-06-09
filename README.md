@@ -43,3 +43,6 @@ be easily converted to "higher" tech solutions if I wanted to in the future.
 So in a certain sense, this tech stack is "maximally" convertible to other 
 solutions, whereas something like a website could be difficult to convert back to
 a collection of pdf files unless it was very careful constructed. 
+
+Why not LaTex? Because typst suits my needs and I have a hunch that it will soon
+be the future standard academic markup language. 
