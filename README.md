@@ -33,6 +33,7 @@ Why? Because it works with minimal setup and I can extend it without a
 headache. 
 
 https://github.com/Myriad-Dreamin/tinymist
+
 https://code.visualstudio.com/
 
 ## Justification for Tech Stack
