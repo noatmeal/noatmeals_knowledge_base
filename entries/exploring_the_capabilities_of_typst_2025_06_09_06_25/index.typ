@@ -1,26 +1,11 @@
-// https://typst.app/universe/package/unequivocal-ams
-#import "@preview/unequivocal-ams:0.1.2": ams-article, theorem, proof
 // https://typst.app/universe/package/cetz
 #import "@preview/cetz:0.4.0"
-
-#show: ams-article.with(
-  title: [Template],
-  authors: (
-    (
-      name: "Noatmeal",
-      email: "noatmeal94@gmail.com",
-      url: "noatmeal.me",
-    ),
-  ),
-  abstract: lorem(100),
-  bibliography: bibliography("references.yml"),
-)
 
 #outline(depth: 7)
 
 #v(.5in)
 
-Call me Ishmael. Some years ago --- never mind how long precisely ---
+Call me Ishmael. Some years ago --- _never mind how long precisely_ ---
 having little or no money in my purse, and nothing particular to
 interest me on shore, I thought I would sail about a little and see
 the watery part of the world. It is a way I have of driving off the
@@ -36,7 +21,42 @@ is my substitute for pistol and ball. With a philosophical flourish
 Cato throws himself upon his sword; I quietly take to the ship. There
 is nothing surprising in this. If they but knew it, almost all men in
 their degree, some time or other, cherish very nearly the same
-feelings towards the ocean with me. @typst_tutorial
+feelings towards the ocean with me.
+
++ list item one
++ list item two
+  - sublist item
+    - subsublist item
+  - another sublist item
+  + what does this do?
+
+Hey I'm referencing @typst_tutorial.
+
+The equation $Q = rho A v + C$ defines the glacial flow rate.
+
+The flow rate of a glacier is defined by the following equation:
+
+$ Q = rho A v + C $
+
+The flow rate of a glacier is given by the following equation:
+
+$ Q = rho A v + "time offset" $
+
+Total displaced soil by glacial flow:
+
+$ 7.32 beta + sum_(i=0)^nabla Q_i / 2 $
+
+Total displaced soil by glacial flow:
+
+$ 7.32 beta + sum_(i=0)^nabla (Q_i (a_i - epsilon)) / 2 $
+
+A Vector:
+
+$ v := vec(x_1, x_2, x_3) $
+
+$ a arrow.squiggly b $
+
+$ a arrow.tl.hook b $
 
 There now is your insular city of the Manhattoes, belted round by
 wharves as Indian isles by coral reefs - commerce surrounds it with
@@ -56,17 +76,6 @@ $ sum_(n=1)^oo 1 / n^2 = pi^2 / 6. $
 
 Likewise a popular integral is
 $ integral_(-oo)^oo e^(-x^2) dif x = sqrt(pi) $
-
-#theorem[
-  The square of any real number is non-negative.
-]
-
-#proof[
-  Any real number $x$ satisfies $x > 0$, $x = 0$, or $x < 0$. If $x = 0$,
-  then $x^2 = 0 >= 0$. If $x > 0$ then as a positive time a positive is
-  positive we have $x^2 = x x > 0$. If $x < 0$ then $−x > 0$ and so by
-  what we have just done $x^2 = (−x)^2 > 0$. So in all cases $x^2 ≥ 0$.
-]
 
 = Introduction
 This is a new section.
@@ -95,12 +104,6 @@ You can use tables like @solids.
 ) <solids>
 
 == Things that need to be done
-
-Prove theorems, such as @thm.
-
-#theorem[The Riemann hypothesis is true.] <thm>
-
-#proof[This is left as an exercise to the reader, given the complexity of the theorem.]
 
 === #lorem(5)
 
@@ -137,6 +140,10 @@ Check out @CeTZ_example.
 === How deep can we go on these subsections?
 
 #lorem(96)
+
+#lorem(53)
+
+#lorem(95)
 
 ==== #lorem(5)
 
@@ -259,3 +266,4 @@ Check out @CeTZ_example.
 = Background
 #lorem(40)
 
+#bibliography("references.yml")
